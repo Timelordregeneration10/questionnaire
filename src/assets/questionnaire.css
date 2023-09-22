@@ -1,0 +1,57 @@
+.contain-box{
+    display: flex;
+    /* 纵向布局 */
+    flex-direction: column;
+    /* 水平居中 */
+    align-items: center;
+}
+
+#container{
+    overflow: scroll;
+    width: 80%;
+}
+
+#container::-webkit-scrollbar {
+    width:0vw;
+}
+
+.questions{
+    text-align: start;
+    font-size: 4vw;
+    color:rgb(130, 238, 218);
+    text-shadow: #f0ca91 0.3vw 0.3vw;
+    animation: appear 1s linear;
+}
+
+.choices{
+    text-align: center;
+    font-size: 3vw;
+    color:#91bef0;
+    text-shadow: violet 0.2vw 0.2vw;
+    animation: appear 1s linear;
+}
+
+.choices:hover{
+    background-color: #dfecfb;
+    cursor: pointer;;
+}
+
+.answers{
+    text-align: end;
+    font-size: 2vw;
+    color:gainsboro;
+    text-shadow: rgb(199, 189, 235) 0.1vw 0.1vw;
+    animation: appear 1s linear;
+}
+
+@keyframes appear {
+    0% {
+        transform:translateY(-50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
