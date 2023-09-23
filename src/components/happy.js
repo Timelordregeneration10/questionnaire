@@ -110,11 +110,11 @@ export default function generate(Nindex) {
                     question.totalscore+=question.scores[Nindex][i];
                     setTimeout(() => {
                         generate(Nindex + 1);
-                    }, 1000);
+                    }, 1200);
                 }
             })
             document.getElementById("container").append(cho[i]);
         }
-    }, 1000);
+    }, 1200);
 
 }
